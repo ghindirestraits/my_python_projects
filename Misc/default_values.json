@@ -1,0 +1,487 @@
+{
+    "0x1110": {
+        "MessageLength" : 14,
+        "MessageID" : 11,
+        "MessageSubID" : 10,
+        "CallSignChar" :  [11, 22, 33, 44, 55, 66, 77],
+        "WingIndex" : 1024,
+        "SquadronIndex" : 12,
+        "FormationIndex" : 5,
+        "Spare4Bits" : 0,
+        "ConnectionMode" : "Monitor"
+    },
+    "0x1111": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0
+    },
+    "0x1112": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "EchoMessageId": 0,
+        "EchoMessageSubID": 0,
+        "ResponseType": 0,
+        "ResponseCode": 0,
+        "TimeForCompletion": 0
+    },
+    "0x1114": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "Spare6Bits": 0,
+        "TrainingRole": 0
+    },
+    "0x1115": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "AlertsStatusBlock": 0
+    },
+    "0x1116": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0
+    },
+    "0x1117": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "FileLabel": 0
+    },
+    "0x1120": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "SpareByte": 0,
+        "ControlBandType": 0,
+        "Spare3Bytes": 0,
+        "TxPowerLevel": 0
+    },
+    "0x1214": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "OFPKeepAliveCnter": 0,
+        "OverallSystemStatus": 0,
+        "MCSStatus": 0,
+        "DataLinkStatus": 0,
+        "ComposedTrasmissionMode": 0,
+        "DatalinkDetectedRadios": 0,
+        "Channel": 0,
+        "OwnshipIdentification": 0,
+        "DiscreteIn": 0,
+        "DiscreteOut": 0,
+        "AlertsEnablingStatus": 0,
+        "MailBoxStatus": 0,
+        "StreamingServicesStatus": 0,
+        "ServiceStatus": 0
+    },
+    "0x1215": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0
+    },
+    "0x1216": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "MCSBlockVersion": 0,
+        "OFPVersion": 0,
+        "DMAPVersion": 0,
+        "HMIVersion": 0,
+        "BSPVersion": 0,
+        "BSP_BSVersion": 0,
+        "BSP_BDVersion": 0,
+        "BSP_BLVersion": 0,
+        "BSP_BM_PVersion": 0,
+        "BSP_BM_SVersion": 0,
+        "EOGL_DRVersion": 0,
+        "CPLDVersion": 0,
+        "FPGAVersion": 0,
+        "ARSVersion": 0,
+        "EOGL_CFVersion": 0
+    },
+    "0x1217": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "BITResultTimestamp": 0,
+        "NumberOfFailures": 0,
+        "BITType": 0,
+        "Spare": 0,
+        "FailureFamilyCode": 0
+    },
+    "0x1310": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "SpareByte": 0
+    },
+    "0x1311": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "MBITTestNumber": 0,
+        "MBITSRUSelect": 0,
+        "SpareByte1": 0,
+        "SpareByte2": 0,
+        "SpareByte3": 0,
+        "SpareByte4": 0
+    },
+    "0x1312": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "SpareByte": 0
+    },
+    "0x1313": {
+        "MessageLength": 0,
+        "MessageIDType": 0,
+        "MessageSubID": 0,
+        "SpareByte": 0
+    },
+    "0x1314": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "EchoMessageID": 0,
+        "EchoMessageSubID": 0,
+        "BITRequestResponse": 0,
+        "BITResponseCod": 0
+    },
+    "0x1315": {
+        "BITKindType": 0,
+        "TimeTagSeconds": 0,
+        "FailureStatus": 0
+    },
+    "0x1316": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "NumOfFailBlocks": 0,
+        "BITType": 0,
+        "BITResultTimetag": 0,
+        "FailureStatus": 0
+    },
+    "0x2020": {
+        "OwnshipNavigationData": 0
+    },
+    "0x2021": {
+        "RadarAATargetData": 0
+    },
+    "0x2022": {
+        "RadarAGTarget": 0
+    },
+    "0x2023": {
+        "OwnshipInventory": 0
+    },
+    "0x2024": {
+        "OwnshipEnhancedData": 0
+    },
+    "0x2025": {
+        "ACMasterMode": 0
+    },
+    "0x2031": {
+        "TargetAugmentationData": 0
+    },
+    "0x5050": {
+        "UTCTimeOfDay": 0
+    },
+    "0x5051": {
+        "MARCTimeRequest": 0
+    },
+    "0x5052": {
+        "MARCTime": 0
+    },
+    "0x6061": {
+        "COPAATarget":[
+            {
+                "TimeTagSeconds" : 0,
+                "TimeTagMilliseconds" : 0,
+                "GlobalID" : 0,
+                "DataValidity" : {
+                    "PresentPosition" : "NotValid",
+                    "Altitude" : "NotValid",
+                    "Velocity" : "NotValid",
+                    "Acceleration" : "NotValid",
+                    "PositionSIGMA" : "NotValid",
+                    "AltitudeSIGMA" : "NotValid",
+                    "VelocitySIGMA" : "NotValid",
+                    "TrackStatus" : "NotValid",
+                    "TrackPriority" : "NotValid",
+                    "DLZ" : "NotValid",
+                    "OperationalRole" : "NotValid",
+                    "Classification" : "NotValid",
+                    "TrackName" : "NotValid",
+                    "RolePlaying" : "NotValid",
+                    "Origination" : "NotValid",
+                    "LaunchStatus" : "NotValid"
+                },
+                "TargetLatitude" : 0,
+                "TargetLongitude" : 0,
+                "TargetAltitude" : 0,
+                "TargetVelocityNorth" : 0,
+                "TargetVelocityEast" : 0,
+                "TargetVelocityUp" : 0,
+                "TargetAccelerationNorth" : 0,
+                "TargetAccelerationEast" : 0,
+                "TargetAccelerationUp" : 0,
+                "SIGMAPositionErrorNorth" : 0,
+                "SIGMAPositionErrorEast" : 0,
+                "SIGMAPositionErrorUp" : 0,
+                "SIGMAVelocityErrorNorth" : 0,
+                "SIGMAVelocityErrorEast" : 0,
+                "SIGMAVelocityErrorUp" : 0,
+                "Spare4Bits" : [0,0,0,0],
+                "TargetStatus" : "Upgraded",
+                "TargetHPLPriority" : "NO_HPL",
+                "TargetHPTPriority" : "NO_HPT",
+                "Spare6Bits" : [0,0,0,0,0,0],
+                "DLZStatus" : "NO_DLZ",
+                "Spare2Bits" : [0,0],
+                "PlatformOperationalRole" : "NotAvailable",
+                "Spare4Bits3" : [0,0,0,0],
+                "TargetClassification" : "NotAvailable",
+                "TrackName" : [0,0,0,0,0,0,0,0],
+                "Spare_3b" : [0,0,0],
+                "OriginationType" : "REAL",
+                "Spare2Bits4" : [0,0],
+                "TrainingRoleType" : "CMBT",
+                "LaunchingStatus" : {
+                    "LaunchStatus" : "NotAvailable",
+                    "Spare_4b" : [0,0,0,0]
+                },
+                "Spare" : [0,0],
+                "IFFClassificationComposed" : {
+                    "Spare4Bits" : [0,0,0,0],
+                    "IFFClassification" : "NotAvailable"
+                },
+                "IFF" : {
+                    "IFFAtribute" : {
+                        "Emergency" : "CodeNotAvailable",
+                        "SPI" : "CodeNotAvailable",
+                        "MilitaryIdentification" : "CodeNotAvailable",
+                        "CivilIdentification" : "CodeNotAvailable",
+                        "Reserved" : "Reserved"
+                    },
+                    "Mode1Code" : 0,
+                    "Mode2Code" : 0,
+                    "Mode3Code" : 0,
+                    "TrackTransponderMode5SAttribute" : 0,
+                    "IFFCOPDataValidity" : {
+                        "IFFMode1" : "CodeNotAvailable",
+                        "IFFMode2" : "CodeNotAvailable",
+                        "IFFMode3A" : "CodeNotAvailable",
+                        "IFFModeS5" : "Unavailable",
+                        "Reserved" : "Reserved"
+                    }
+                },
+                "Spare_2B_1" : [0,0],
+                "ComposedTrackNumber" : {
+                    "NumberOfDetectedSystems" : 0,
+                    "SpareByte1" : [0,0,0],
+                    "SystemIdentification" : {
+                        "MemberId" : 0,
+                        "TrackNumber" : 0
+                    },
+                    "Spare" : 0,
+                    "Spare1" : 0,
+                    "Spare2" : 0,
+                    "Spare3" : 0
+                }
+            }
+        ]
+    },
+    "0x6064": {        
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "OperationOpcode": 0,
+        "DataLinkAirEntityCode": 0,
+        "GlobalID": 0
+    },
+    "0x6065": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "DesignationRequestCommand": 0,
+        "DesignationRequestType": 0,
+        "RequestResponse": 0
+    },
+    "0x6066": {
+        "DesignationStatus": 0
+    },
+    "0x6067": {
+        "AlertBlock": 0
+    },
+    "0x6070": {
+        "COPMemberEnhancedData": 0
+    },
+    "0x7070": {
+        "AddressedMessageHeader": 0,
+        "TextDataPayload": 0
+    },
+    "0x7071": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "RequestNumber": 0
+    },
+    "0x7072": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "RequestNumber": 0,
+        "RejectCode": 0
+    },
+    "0x7074": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "RequestNumber": 0,
+        "RespondingMemberID": 0,
+        "ManualAckType": 0
+    },
+    "0x7170": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "RequestNumber": 0,
+        "MessageFlag": 0,
+        "PayloadType": 0
+    },
+    "0x7171": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "RequestNumber": 0,
+        "RequestResponse": 0,
+        "NumberOfMessages": 0,
+        "Spare": 0,
+        "MessagesSummary": 0
+    },
+    "0x7172": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "RequestNumber": 0,
+        "MessageIndex": 0
+    },
+    "0x7173": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "RequestNumber": 0,
+        "RequestResponse": 0,
+        "ManualACKRequiredFlag": 0,
+        "MessageIndex": 0,
+        "MessageOriginatorID": 0,
+        "MessageOriginatorCallSign": 0,
+        "OriginatorFormationIndex": 0,
+        "Destination": 0,
+        "DestMemberID": 0,
+        "Spare1": 0,
+        "Spare2": 0,
+        "TimeTag": 0,
+        "MessagePayloadType": 0,
+        "MessageSubject": 0,
+        "MessageFlag": 0,
+        "NumberOfAcknowledgements": 0
+    },
+    "0x7174": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "RequestNumber": 0,
+        "MessageIndex": 0,
+        "ManualAckType": 0
+    },
+    "0x7175": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "RequestNumber": 0,
+        "MessageIndex": 0,
+        "RequestResponse": 0
+    },
+    "0x8012": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "ComId": 0,
+        "ModeSelect": 0,
+        "AudioSpareByte": 0
+    },
+    "0x8017": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "V_COM_IDSelect": 0,
+        "AnalogPresetChannel": 0,
+        "VCOM_AnalogFrequency": 0,
+        "VCOM_AnalogModulation": 0,
+        "VCOM_AnalogBandwidth": 0,
+        "VCOM_Squelch": 0,
+        "AudioSpareByte": 0
+    },
+    "0x8018": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "V_COM_IDSelect": 0,
+        "Spare4Bits": 0,
+        "GuardFrequency": 0,
+        "Spare7Bits": 0,
+        "VCOM_GuardSqulch": 0,
+        "AudioSpareByte": 0
+    },
+    "0x8019": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "EchoMessageID": 0,
+        "EchoMessageSubID": 0,
+        "ResponseType": 0,
+        "ResponseCode": 0
+    },
+    "0x801A": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0
+    },
+    "0x801B": {
+        "AudioSessionsInfoReport": 0
+    },
+    "0x9010": {
+        "Destination": 0,
+        "DestinationMemberID": 0
+    },
+    "0x9011": {
+        "Destination": 0,
+        "DestinationMemberID": 0
+    },
+    "0x9012": {
+        "VideoResponse": 0,
+        "VideoResponseCode": 0,
+        "Destination": 0,
+        "DestinationMemberID": 0,
+        "EchoMessageID": 0,
+        "EchoMessageSubID": 0,
+        "VideoCommand": 0
+    },
+    "0x9013": {
+        "Video1OriginatorMemberID": 0,
+        "DatalinkChannelAllocation1": 0,
+        "Video2OriginatorMemberID": 0,
+        "DatalinkChannelAllocation2": 0
+    },
+    "0XA021": {
+        "MessageLength": 0,
+        "MessageID": 0,
+        "MessageSubID": 0,
+        "RequestNumber": 0,
+        "RespondingMemberID": 0,
+        "Spare": 0
+    }
+}
