@@ -1,0 +1,3 @@
+Testando o uso do metodo seek().
+Esta e a segunda linha do arquivo.
+E esta, a terceira.
