@@ -1,9 +1,10 @@
 from __future__ import print_function
+
 try:
     import tkinter as tk
     import tkinter.messagebox as messagebox
 except:
-    import Tkinter as tk 
+    import Tkinter as tk
     import tkMessageBox as messagebox
 
 import random
@@ -43,8 +44,10 @@ class Grid:
             start = 0
             end = self.size - 1
             while start < end:
-                self.cells[i][start], self.cells[i][end] = \
-                    self.cells[i][end], self.cells[i][start]
+                self.cells[i][start], self.cells[i][end] = (
+                    self.cells[i][end],
+                    self.cells[i][start],
+                )
                 start += 1
                 end -= 1
 
@@ -70,8 +73,7 @@ class Grid:
         self.merged = False
         for i in range(self.size):
             for j in range(self.size - 1):
-                if self.cells[i][j] == self.cells[i][j + 1] and \
-                   self.cells[i][j] != 0:
+                if self.cells[i][j] == self.cells[i][j + 1] and self.cells[i][j] != 0:
                     self.cells[i][j] *= 2
                     self.cells[i][j + 1] = 0
                     self.current_score += self.cells[i][j]
@@ -106,66 +108,72 @@ class Grid:
         self.cells = cells
 
     def print_grid(self):
-        print('-' * 40)
+        print("-" * 40)
         for i in range(self.size):
             for j in range(self.size):
-                print('%d\t' % self.cells[i][j], end='')
+                print("%d\t" % self.cells[i][j], end="")
             print()
-        print('-' * 40)
+        print("-" * 40)
 
 
 class GamePanel:
-    '''The GUI view class of the 2048 game showing via tkinter.'''
+    """The GUI view class of the 2048 game showing via tkinter."""
+
     CELL_PADDING = 10
-    BACKGROUND_COLOR = '#92877d'
-    EMPTY_CELL_COLOR = '#9e948a'
+    BACKGROUND_COLOR = "#92877d"
+    EMPTY_CELL_COLOR = "#9e948a"
     CELL_BACKGROUND_COLOR_DICT = {
-        '2': '#eee4da',
-        '4': '#ede0c8',
-        '8': '#f2b179',
-        '16': '#f59563',
-        '32': '#f67c5f',
-        '64': '#f65e3b',
-        '128': '#edcf72',
-        '256': '#edcc61',
-        '512': '#edc850',
-        '1024': '#edc53f',
-        '2048': '#edc22e',
-        'beyond': '3c3a32'
+        "2": "#eee4da",
+        "4": "#ede0c8",
+        "8": "#f2b179",
+        "16": "#f59563",
+        "32": "#f67c5f",
+        "64": "#f65e3b",
+        "128": "#edcf72",
+        "256": "#edcc61",
+        "512": "#edc850",
+        "1024": "#edc53f",
+        "2048": "#edc22e",
+        "beyond": "3c3a32",
     }
     CELL_COLOR_DICT = {
-        '2': '#776e65',
-        '4': '#776e65',
-        '8': '#f9f6f2',
-        '16': '#f9f6f2',
-        '32': '#f9f6f2',
-        '64': '#f9f6f2',
-        '128': '#f9f6f2',
-        '256': '#f9f6f2',
-        '512': '#f9f6f2',
-        '1024': '#f9f6f2',
-        '2048': '#f9f6f2',
-        'beyond': '#f9f6f2'
+        "2": "#776e65",
+        "4": "#776e65",
+        "8": "#f9f6f2",
+        "16": "#f9f6f2",
+        "32": "#f9f6f2",
+        "64": "#f9f6f2",
+        "128": "#f9f6f2",
+        "256": "#f9f6f2",
+        "512": "#f9f6f2",
+        "1024": "#f9f6f2",
+        "2048": "#f9f6f2",
+        "beyond": "#f9f6f2",
     }
-    FONT = ('Verdana', 24, 'bold')
-    UP_KEYS = ('w', 'W', 'Up')
-    LEFT_KEYS = ('a', 'A', 'Left')
-    DOWN_KEYS = ('s', 'S', 'Down')
-    RIGHT_KEYS = ('d', 'D', 'Right')
+    FONT = ("Verdana", 24, "bold")
+    UP_KEYS = ("w", "W", "Up")
+    LEFT_KEYS = ("a", "A", "Left")
+    DOWN_KEYS = ("s", "S", "Down")
+    RIGHT_KEYS = ("d", "D", "Right")
 
     def __init__(self, grid):
         self.grid = grid
         self.root = tk.Tk()
-        self.root.title('2048')
+        self.root.title("2048")
         self.background = tk.Frame(self.root, bg=GamePanel.BACKGROUND_COLOR)
         self.cell_labels = []
         for i in range(self.grid.size):
             row_labels = []
             for j in range(self.grid.size):
-                label = tk.Label(self.background, text='',
-                                 bg=GamePanel.EMPTY_CELL_COLOR,
-                                 justify=tk.CENTER, font=GamePanel.FONT,
-                                 width=4, height=2)
+                label = tk.Label(
+                    self.background,
+                    text="",
+                    bg=GamePanel.EMPTY_CELL_COLOR,
+                    justify=tk.CENTER,
+                    font=GamePanel.FONT,
+                    width=4,
+                    height=2,
+                )
                 label.grid(row=i, column=j, padx=10, pady=10)
                 row_labels.append(label)
             self.cell_labels.append(row_labels)
@@ -176,22 +184,24 @@ class GamePanel:
             for j in range(self.grid.size):
                 if self.grid.cells[i][j] == 0:
                     self.cell_labels[i][j].configure(
-                         text='',
-                         bg=GamePanel.EMPTY_CELL_COLOR)
+                        text="", bg=GamePanel.EMPTY_CELL_COLOR
+                    )
                 else:
                     cell_text = str(self.grid.cells[i][j])
                     if self.grid.cells[i][j] > 2048:
-                        bg_color = GamePanel.CELL_BACKGROUND_COLOR_DICT.get('beyond')
-                        fg_color = GamePanel.CELL_COLOR_DICT.get('beyond')
+                        bg_color = GamePanel.CELL_BACKGROUND_COLOR_DICT.get("beyond")
+                        fg_color = GamePanel.CELL_COLOR_DICT.get("beyond")
                     else:
                         bg_color = GamePanel.CELL_BACKGROUND_COLOR_DICT.get(cell_text)
                         fg_color = GamePanel.CELL_COLOR_DICT.get(cell_text)
                     self.cell_labels[i][j].configure(
-                        text=cell_text,
-                        bg=bg_color, fg=fg_color)
+                        text=cell_text, bg=bg_color, fg=fg_color
+                    )
+
 
 class Game:
-    '''The main game class which is the controller of the whole game.'''
+    """The main game class which is the controller of the whole game."""
+
     def __init__(self, grid, panel):
         self.grid = grid
         self.panel = panel
@@ -206,7 +216,7 @@ class Game:
     def start(self):
         self.add_start_cells()
         self.panel.paint()
-        self.panel.root.bind('<Key>', self.key_handler)
+        self.panel.root.bind("<Key>", self.key_handler)
         self.panel.root.mainloop()
 
     def add_start_cells(self):
@@ -222,7 +232,7 @@ class Game:
 
         self.grid.clear_flags()
         key_value = event.keysym
-        print('{} key pressed'.format(key_value))
+        print("{} key pressed".format(key_value))
         if key_value in GamePanel.UP_KEYS:
             self.up()
         elif key_value in GamePanel.LEFT_KEYS:
@@ -235,7 +245,7 @@ class Game:
             pass
 
         self.panel.paint()
-        print('Score: {}'.format(self.grid.current_score))
+        print("Score: {}".format(self.grid.current_score))
         if self.grid.found_2048():
             self.you_win()
             if not self.keep_playing:
@@ -252,15 +262,15 @@ class Game:
     def you_win(self):
         if not self.won:
             self.won = True
-            print('You Win!')
-            if messagebox.askyesno('2048', 'You Win!\n'
-                                       'Are you going to continue the 2048 game?'):
+            print("You Win!")
+            if messagebox.askyesno(
+                "2048", "You Win!\n" "Are you going to continue the 2048 game?"
+            ):
                 self.keep_playing = True
 
     def game_over(self):
-        print('Game over!')
-        messagebox.showinfo('2048', 'Oops!\n'
-                                    'Game over!')
+        print("Game over!")
+        messagebox.showinfo("2048", "Oops!\n" "Game over!")
 
     def up(self):
         self.grid.transpose()
@@ -295,7 +305,7 @@ class Game:
         self.grid.reverse()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     size = 4
     grid = Grid(size)
     panel = GamePanel(grid)
